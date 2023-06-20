@@ -12,3 +12,10 @@ Install it and run:
 npm install
 npm run dev
 ```
+
+or :
+
+```sh
+yarn
+yarn dev
+```
