@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { useEffect, useState } from 'react';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import { Button, TextField } from '@mui/material';
@@ -18,6 +18,10 @@ export default function Home() {
   const onPressLogin: SubmitHandler<yup.InferType<typeof LoginSchema>> = (data) => {
     console.log(data);
   };
+
+  useEffect(() => {
+    setValue("email", "testtest@gmail.com");
+  }, [])
 
   return (
     <Container maxWidth="lg">
